@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Desktop</title>
+    <link rel="stylesheet" href="calculator.css"></link>
+    <script src="calculator.js"></script>
+
+</head>
+<body>
+    <div class="calculator">
+       <p>My Calculator</p>
+    <table border="1" class="table"> 
+        <tr> 
+           <td id='screen' colspan="3"><input type="text" id="result"/></td> 
+           <td><button id="clear"  onclick="clear()">C</button></td>
+        </tr> 
+
+        <tr>
+            
+            <td><input type= "button" value="√" onclick="sqrRoot()"></td>
+            <td><input type= "button" value="_²" onclick="square()"></td>
+            <td><input type= "button" value="_³" onclick="cube()"></td>
+            <td><input type= "button" value="  _x  " onclick="power()"></td>
+        </tr>
+
+        <tr> 
+           <td><input type="button" value="1" onclick="display('1')"/> </td> 
+           <td><input type="button" value="2" onclick="display('2')"/> </td> 
+           <td><input type="button" value="3" onclick="display('3')"/> </td> 
+           <td><input type="button" value=" / " onclick="display('/')"/> </td> 
+        </tr> 
+
+        <tr> 
+           <td><input type="button" value="4" onclick="display('4')"/> </td> 
+           <td><input type="button" value="5" onclick="display('5')"/> </td> 
+           <td><input type="button" value="6" onclick="display('6')"/> </td> 
+           <td><input type="button" value=" - " onclick="display('-')"/> </td> 
+        </tr> 
+
+        <tr> 
+           <td><input type="button" value="7" onclick="display('7')"/> </td> 
+           <td><input type="button" value="8" onclick="display('8')"/> </td> 
+           <td><input type="button" value="9" onclick="display('9')"/> </td> 
+           <td><input type="button" value=" + " onclick="display('+')"/> </td> 
+        </tr> 
+
+        <tr> 
+           <td><input type="button" value="." onclick="display('.')"/> </td> 
+           <td><input type="button" value="0" onclick="display('0')"/> </td> 
+           <td><input type="button" value="=" onclick="solve()"/> </td> 
+           <td><input type="button" value=" * " onclick="display('*')"/> </td> 
+        </tr> 
+     </table> 
+     </div>
+     <div>
+      <p>My Horoscope</p>
+      <iframe src="https://en.horoscopofree.com/object/html/iframe-sign-12" 
+
+      frameborder="0"
+      width="460" 
+      height="100" 
+      frameborder="0"
+      font-family= "garamond"
+      font-size= "larger"
+      
+      >
+   </iframe>
+      
+     
+   </div>
+   <div class="classNote">
+      <p>My Notes</p>
+      <input class="noteInput" type="text" id="result2">
+      <button id="myButton" onclick="postUp()">Submit</button>
+   </div>
+    <script>
+       document.getElementById("clear").addEventListener("click", function() {
+  clear()
+});
+    </script>
+</body>
+</html>
